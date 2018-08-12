@@ -2,16 +2,13 @@ import {ADD_COMMENT, REMOVE_COMMENT, EDIT_COMMENT, THUMB_UP_COMMENT, THUMB_DOWN_
 
 import { combineReducers } from 'redux';
 import comments from './comments';
-import users from './users';
 
 const app = combineReducers({
-    comments,
-    users
+    comments
 });
 
 const initialState = {
-    comments: [],
-    users: []
+    comments: []
 };
 
 function reducer(state = initialState, action) {

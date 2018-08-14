@@ -21,3 +21,5 @@ function comments(state = [], action) {
                 , ...state.comments];
     }
 }
+
+export default comments;
